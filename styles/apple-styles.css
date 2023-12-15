@@ -1,0 +1,209 @@
+/* Reset and Basics */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+
+/* Navigation Styles */
+.container-navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    height: 76px;
+}
+
+.container-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-navbar li {
+    margin: 0 15px;
+    
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #9f9f9f;
+    font-size: 13px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-center a:hover {
+    color: #ffcc00;
+}
+
+.logo {
+    max-width: 20px;
+    margin-right: 20px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0; /* Adjusted padding */
+    margin-top: -50px; /* Adjusted margin */
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    
+}
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px; /* Adjusted padding */
+    
+}
+
+.hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    color:blue;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.hero a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.hero-imgs {
+    max-width: 500px;
+}
+
+.white {
+    color: black;
+    background-color: white;
+    
+    
+  
+}
+.black {
+
+    background:black url("images/black.png") bottom center no-repeat;
+    color: white;
+    padding-bottom:300px;
+}
+
+.main-heading,
+.description,
+.shop-button {
+    /* Your specific styles for these elements */
+    margin-top: -40px; /* Adjust this value to bring them closer to the logo */
+    margin-bottom: 50px;
+}
+
+.main-heading,
+.description {
+    padding: 23px;
+
+}
+
+
+
+/* .grid-item h1{
+    
+    margin-bottom: -20px;
+    
+} */
+
+
+
+/* Grid Styles */
+.grid-container {
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: fill;
+    padding: 10px;
+    margin: 0px auto;    
+
+}
+
+.grid-item {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+
+}
+
+.grid-img {
+    max-width: 40%;
+    height: auto;
+
+}
+
+
+
+.grid-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    color:blue;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.grid-item a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+
+/* black logo */
+.small-image {
+    max-width: 50px; /* Set your desired fixed height */
+    height: auto;
+    margin-top: -55px;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Update the grid to a single column */
+    }
+}

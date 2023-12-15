@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+.block {
+  height: 50px;
+  background: linear-gradient(to top, #333, #2a3e29); /* Flip the gradient direction */
+  margin-bottom: 40px;
+}
+
+
+header {
+  background-color: #2a3e29;
+  color: #13cc38;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  
+}
+.logo {
+  margin: 0; /* Reset margin */
+  margin-top:20px;
+}
+
+
+
+nav {
+  flex-grow: 1; /* This allows the navigation to take up remaining space */
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-top:20px;
+  text-align: center;
+}
+nav ul li a {
+  color: #13cc38;
+  font-size: larger;
+  padding: 20px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #00ff33; 
+}
+
+
+nav ul li.far-right {
+  margin-left: auto; /* Push the new item to the right */
+}
+
+
+section#about{
+  background-color: #aeaba7;
+  padding:  20px;
+  margin-right: 200px;
+  margin-left:100px;
+  
+  width: 50%;
+}
+section#about h2{
+  color:#000000;
+  width: 250px;
+}
+section#about p{
+  color:#984646;
+}
+section#writing{
+  margin-right: 20px;
+  background-color: #aeaba7;
+  margin-top:5px;
+  margin-left:100px;
+  margin-right: 200px;
+  width: 50%;
+  padding:20px;
+}
+section#writing h2{
+  color:#000000;
+}
+
+.topwrap{
+  margin:5px;
+  padding:10px;
+  background-color:rgb(203, 203, 203);
+  border-bottom: 10px solid #91b190;
+}
+
+/* Form Styles */
+
+.js-img {
+  max-width:50%;
+  margin: 0 auto;
+}
+.botsection{
+  display: flex;
+  margin: 20px;
+}
+
+section#form {
+  border: 10px solid #91b190;
+  border-radius:18%;/* Add a border */
+  background-color: rgb(191, 188, 188);
+  padding: 40px; /* Add padding */
+  width: 320px;
+  height: 50%;
+  margin: 0 auto; /* Center the form horizontally */
+  margin-left: 5px;
+}
+section#form h2 {
+  color: #2a3e29;
+}
+form label,
+form input,
+form textarea,
+form input[type="submit"] {
+  display: block;
+  margin-bottom: 10px;
+  width:100%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 8px;
+}
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+/* Red Footer Styles */
+.grid-container {
+display: grid;
+background-color: #c64242;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+max-width: fill;
+padding: 10px;
+margin: 0px auto;    
+}
+
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .botsection {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .js-img {
+    max-width: 100%; /* Adjust image width to fit smaller screens */
+    margin-left: 0; /* Reset margin for the image */
+  }
+
+  section#form {
+    width: 80%; /* Adjust form width for smaller screens */
+    margin: 20px auto; /* Center the form */
+  }
+}
+
+
