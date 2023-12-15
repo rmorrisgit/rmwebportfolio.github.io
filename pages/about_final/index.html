@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Flags</title>
+    <style>
+        .column {
+            width: 50.00%;
+            float: left;
+        }
+      
+    </style>
+</head>
+<body style="border-radius:1px; border-color:black; background-color: beige;">
+    <div class="column">
+        <p>Here's the list of countries. Select one:</p>
+        <form> 
+            <select id="countryNameList" name="countryName">
+            </select>
+        </form>
+    </div>
+    <div id="dataColumn" class="column" style="display:none;">
+
+        <h1 id="selectedCountry"></h1>
+
+        <!-- <h2>Flag</h2> -->
+        <div id="flagContainer">
+            <img id="flagImage" src="" alt="Flag">
+        </div>
+
+        <div>
+            <h4>Population</h4>
+            <p id="population"></p>        
+        </div>
+
+        <div>
+            <h4>Area</h4>
+            <!-- Radio Input -->
+            <div>
+                <input type="radio" id="sqm" name="area_in" value="sqm" checked/>
+                <label for="sqm">Squared Miles</label>
+                <input type="radio" id="sqkm" name="area_in" value="sqkm" />
+                <label for="sqkm">Squared KM</label>
+            </div>
+            <!-- Output -->
+            <p id="area"></p>
+        </div>
+        
+        <div>
+            <h4>Population Density</h4>
+            <!-- Radio Input -->
+            <div>
+                <input type="radio" id="per-sqm" name="population-density" value="per-sqm" checked/>
+                <label for="per-sqm">Per Squared Miles</label>
+                <input type="radio" id="per-sqkm" name="population-density" value="per-sqkm" />
+                <label for="per-sqkm">Per Squared KM</label>
+            </div>
+            <!-- Output -->
+            <p id="population-density-result"></p>
+        </div>
+
+        <div>
+            <h4>Percentage of World Population</h4>
+            <!-- Output -->
+            <p id="worldpopulation-percentage-result"></p>
+        </div>
+
+        <div>
+            <a id="wikiLink" href="#somelink">
+                <button id="wikiButton" type="submit">Wiki Page</button>
+            </a>
+
+            <a id="quizLink" href="anotherpage.html">
+                <button id="quizButton" type="submit">Launch Quiz</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
