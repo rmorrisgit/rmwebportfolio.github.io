@@ -111,8 +111,7 @@ body {
   
 }
 .black {
-
-    background:black url("images/black.png") bottom center no-repeat;
+    background:black url("../images/black.png") bottom center no-repeat;
     color: white;
     padding-bottom:300px;
 }
